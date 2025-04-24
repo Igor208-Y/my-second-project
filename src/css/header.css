@@ -1,155 +1,155 @@
-/* /* стиді для мобілки * */
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: transparent;
-  margin-top: 32px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+    margin-top: 27px;
 }
+
 .header-container {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 0 auto;
-}
-.logo-box {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: start;
-}
-.header-logo {
-  border-radius: 18px;
-  width: 80px;
-  height: 80px;
-  margin-right: 8px;
-}
-
-.logo-header {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-  transition: color 0.3s ease-in-out;
-}
-
-.logo-link {
-  display: flex;
-}
-
-.logo-header:hover,
-.logo-header:focus-visible {
-  outline: none;
-  border: none;
-  color: #ed3b44;
-}
-.burger-btn {
-  display: block;
-  background-color: transparent;
-  border: none;
-}
-.nav {
-  display: none;
-}
-.menu-list {
-  display: none;
-}
-.order-btn {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-  .burger-btn {
-    display: none;
-  }
-  .nav {
-    display: block;
-  }
-  .navbar {
-    width: 70px;
-  }
-  .header-container {
-    gap: 151px;
-  }
-  .nav-menu {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #fafafa;
-  }
-
-  .nav-menu:hover,
-  .nav-menu:focus-visible,
-  .menu-link:hover,
-  .menu-link:focus-visible {
-    color: #ed3b44;
-  }
-
-  .menu-list {
-    display: none;
-  }
-  .menu-list.visible {
-    display: block;
-  }
-  .menu-link {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #fafafa;
-  }
-  .order-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 10px;
-    border-radius: 60px;
-    padding: 18px 24px;
-    width: 163px;
-    height: 55px;
-    background: #ed3b44;
+    margin: 0 auto;
+         }
+
+.header-logo {
+    display: flex;
+}
+
+.header-picture {
+    border-radius: 18px;
+}
+
+.Jefferson-logo {
+    margin-left: 8px;
+
     font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: #fafafa;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.menu-list {
+    display: none;
+}
+
+.order-btn {
+    display: none;
+}
+
+.burger-btn {
+    background-color: transparent;
     border: none;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    text-decoration: none;
-  }
+    padding: 0;
+}
 
-  .order-btn:hover,
-  .order-btn:focus-visible {
-    background-color: #e0373f;
-  }
+/*-------------------- Tablet ------------------- */
 
-  .order-btn:active {
-    background-color: #fafafa;
-    color: #ed3b44;
-  }
+@media only screen and (min-width: 768px) {
+    .burger-btn {
+        display: none;
+    }
+
+    .menu-list.visible{
+        display: block;
+    }
+
+        .nav-menu {
+            display: block;
+            padding: 10px;
+            width: 60px;
+            height: 39px;
+
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            text-decoration-skip-ink: none;
+            color: #fafafa;
+        }
+
+                  .nav-menu:hover,
+                  .nav-menu:focus-visible,
+                  .menu-link:hover,
+                  .menu-link:focus-visible {
+                    text-decoration: underline;
+                      color: #ed3b44;
+                  }
+
+        .order-btn {
+            display: block;
+
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            color: #fafafa;
+
+          
+        }
+
+        .header-container {
+            gap: 151px;
+        }
+
+        .header {
+            margin: 32 32 32 188;
+        }
+
+        .menu-link {
+            font-weight: 500;
+                font-size: 16px;
+                letter-spacing: -0.02em;
+                color: #fafafa;
+        }
+
+
+        .order-btn {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+
+          gap: 10px;
+            border-radius: 60px;
+            padding: 18px 24px;
+            width: 163px;
+            height: 55px;
+            background: #ed3b44;
+            font-family: 'Inter Tight', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            color: #fafafa;
+            border: none;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            text-decoration: none;
+        }
+        
+        .order-btn:hover,
+        .order-btn:focus-visible {
+            background-color: #e0373f;
+        }
+        
+        .order-btn:active {
+            background-color: #fafafa;
+            color: #ed3b44;
+        }
 }
+
+/*------------------------ Desktop ---------------------------- */
+
 @media only screen and (min-width: 1440px) {
-  .header-container {
-    gap: 487px;
-  }
+    .header-container {
+        gap: 487px;
+    }
 }
-@media only screen and (min-width: 1440px) {
-  .header-container {
-    gap: 487px;
-  }
-}
+
+
