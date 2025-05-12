@@ -124,7 +124,7 @@ background: url(../images/mobile/hero/bg-hero-mobile@1x.png) no-repeat;
 
 @media only screen and (min-width: 1440px) {
     .section-hero {
-        max-width: 1440px;
+        min-width: 1440px;
         background: url(../images/desktop/hero/bg-hero-desktop@1x.png) no-repeat;
     }
 
@@ -136,11 +136,9 @@ background: url(../images/mobile/hero/bg-hero-mobile@1x.png) no-repeat;
     }
 
         .hero-title {
-            width: 1084px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 243px;
-        }
-    
-        .hero-list {
-            padding: 0 178px;
         }
 }
